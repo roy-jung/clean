@@ -1,0 +1,3 @@
+--webpack-config webpack.config.js
+--glob *.js
+--recursive
