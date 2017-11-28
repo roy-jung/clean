@@ -2,7 +2,7 @@ const path = require('path');
 const webpack = require('webpack');
 const FriendlyErrorsPlugin = require('friendly-errors-webpack-plugin');
 const portfinder = require('portfinder');
-const resolve = dir => path.join(__dirname, dir);
+const resolve = dir => path.resolve(__dirname, dir);
 
 const webpackDevServerConfig = {
     entry: {
@@ -16,6 +16,9 @@ const webpackDevServerConfig = {
     },
     resolve: {
         extensions: ['.js'],
+        alias: {
+            src: resolve('src'),
+        },
     },
     module: {
         rules: [

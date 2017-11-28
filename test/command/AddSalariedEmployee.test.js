@@ -1,5 +1,4 @@
 import AddSalariedEmployee from '../../src/command/AddSalariedEmployee';
-// import SalariedClassification from '../src/classification/SalariedClassification';
 import employeeRepository from '../../src/employeeRepository';
 import { assert } from 'chai';
 
